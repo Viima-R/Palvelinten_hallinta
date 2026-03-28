@@ -61,11 +61,11 @@ Tein yml tiedoston jonka sisään määrittelin roolin "hello", jonka kaikki kon
 Testasin playbookia ja sain odostusten mukaisen vastauksen. "roolia "hello" ei ole luotu"
 
 Loin kansioita niin, että sain hakemisto polun ~/ansible/**roles/hello/tasks/** jonka sisään loin tiedoston main.yml joka kirjoittaa tiedoston /tmp/hello-ansible, jonka sisältö on "moikkelismoi ansible"
-
+```
 - copy:
     dest: /tmp/hello-ansible
     content: "moikkelismoi ansible!\n"
-
+```
 Testasin ja toimi odotusten mukaisesti tiedosto oli luoto orjan /tmp/ hakemistoon.
 
 Lisäsin vielä conffi tiedostoon, jossa aikaisemmin oli määritelty "hosts.ini" oletus inventaarioksi, asettuksen, joka toistaa aina ansiblen tehdyt toimenpiteet.

@@ -78,14 +78,16 @@ TASK [hello : copy dest=/tmp/hello-ansible, content=moikkelismoi ansible!
 
 Tein playbookin, mikä asentaa curlin uusimman version. Lopputulos näyttää tältä
 
->.
->├── ansible.cfg
->├── hosts.ini
->├── roles
->│   └── curl
->│       └── tasks
->│           └── main.yml
->└── site.yml
+```
+.
+├── ansible.cfg
+├── hosts.ini
+├── roles
+│   └── curl
+│       └── tasks
+│           └── main.yml
+└── site.yml
+```
 
 4 directories, 4 files
 

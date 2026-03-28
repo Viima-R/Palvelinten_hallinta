@@ -105,7 +105,7 @@ Ajettiin komennolla
 $ ansible-playbook site.yml --ask-become-pass
 
 ## Lähteet
-https://terokarvinen.com/hello-ansible/
-https://terokarvinen.com/ssh-public-key-login-without-password/
-https://stackoverflow.com/questions/54944080/installing-multiple-packages-in-ansible
-https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_privilege_escalation.html
+- https://terokarvinen.com/hello-ansible/
+- https://terokarvinen.com/ssh-public-key-login-without-password/
+- https://stackoverflow.com/questions/54944080/installing-multiple-packages-in-ansible
+- https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_privilege_escalation.html

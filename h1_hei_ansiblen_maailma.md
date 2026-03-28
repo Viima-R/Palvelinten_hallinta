@@ -95,13 +95,14 @@ anisble.cfg, site.yml ja hosts.ini tiedostot on samanlaiset kun aikaisemmassa va
 
 main.yml sisältö:
 
+```
 - name: Install curl
   apt:
     pkg:
       - curl
     state: latest
   become: true
-
+```
 Ajettiin komennolla
 
 $ ansible-playbook site.yml --ask-become-pass

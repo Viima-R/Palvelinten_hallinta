@@ -9,7 +9,6 @@ Viikko 14 kotitehtävät
   - Root shell auki toiseen ikkunaan, jos jotain menee rikki, voidaan mahdollisesti korjata sitä kautta.
   - Lisätään sääntö käyttäjä/ryhmä oikeuksiin lumoamalle ryhmälle, jossa käyttäjä on, joka sallii salasanattoman sudon käytön
 - **Testaus!**
-Miksi tätä ei voisi tehdä suoraan root shellissä jos siellä pystyisi sen myös korjaamaan jos jotain menee rikki?
 
 ### Karvinen 2026: Passwordless Sudo with Ansible
   - Tehdään ansiblella automatisoiden mitä opittiin aikaisemmassa artikkelissa.
@@ -134,8 +133,9 @@ Ja toimi odotusten mukaisesti. Tää on ihan kätevä voi keskeyttää ansible k
 
 ## Lähteet
 
-https://terokarvinen.com/passwordless-sudo/
-https://terokarvinen.com/passwordless-sudo-with-ansible/
-https://docs.ansible.com/projects/ansible/latest/collections/ansible/builtin/stat_module.html#ansible-collections-ansible-builtin-stat-module
+- https://terokarvinen.com/passwordless-sudo/
+- https://terokarvinen.com/passwordless-sudo-with-ansible/
+- https://docs.ansible.com/projects/ansible/latest/collections/ansible/builtin/stat_module.html#ansible-collections-ansible-builtin-stat-module
+- ansible-docs: file, copy, apt, user, authorized_key
 
   

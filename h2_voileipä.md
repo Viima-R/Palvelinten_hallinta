@@ -15,7 +15,7 @@ Miksi tätä ei voisi tehdä suoraan root shellissä jos siellä pystyisi sen my
   - Tehdään ansiblella automatisoiden mitä opittiin aikaisemmassa artikkelissa.
   - On hyvä ymmärtää ja osata tehdä manuaalisesti ennen kun alkaa automatisoimaan.
 
-### `ansible-doc`
+### ansible-doc
 
   #### Copy
   Kopio tiedoston tai polkurakenteen, joko master koneelta tai etäkoneelta, annettuun sijaintiin etäkoneella.
@@ -24,21 +24,21 @@ Miksi tätä ei voisi tehdä suoraan root shellissä jos siellä pystyisi sen my
 
   Esimerkki tiedoston kopioimisesta ja omistajan ja oikeuksien asettamisesta.
 
-  #### `Apt`
+  #### Apt
   Hallinoi apt paketteja
 
   <img width="318" height="93" alt="Image" src="https://github.com/user-attachments/assets/77d558a9-4b9d-448c-902a-2259b49e8872" />
 
   Esimerkki useamman paketin asentamisesta.
 
-  #### `file`
+  #### file
   Antaa atribuutteja tai vaihtoehtoisesti poistaa tiedostoja, kansioita tai symlinkkejä.
 
   <img width="309" height="80" alt="Image" src="https://github.com/user-attachments/assets/80bb681a-abd5-4ace-a062-81c0dc0caf28" />
 
   Esimerkki tiedoston poistamisesta.
   
-  #### `user`
+  #### user
   Hallinoi käyttäjiä.
 
   <img width="466" height="77" alt="Image" src="https://github.com/user-attachments/assets/f272ae8c-29c8-414f-a234-c7a0228c1229" />
@@ -48,10 +48,10 @@ Miksi tätä ei voisi tehdä suoraan root shellissä jos siellä pystyisi sen my
   #### authorized_key
   Lisää tai poistaa sallitun SSH avaimen tietyltä käyttäjältä
   
-  ##### `key`
+  ##### key
   Avain, joko merkkijonona tai linkkinä
 
-  ##### `user`
+  ##### user
   Käyttäjä tai etälaite, jonka avainta tiedostoa muokataan
   
   <img width="391" height="102" alt="Image" src="https://github.com/user-attachments/assets/2bf1439a-1a0a-4222-959a-17e52f07dc71" />

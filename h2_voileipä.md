@@ -92,4 +92,50 @@ Miksi tätä ei voisi tehdä suoraan root shellissä jos siellä pystyisi sen my
 
   <img width="1165" height="525" alt="Image" src="https://github.com/user-attachments/assets/6503995d-dc7c-43ca-bad6-8103d154556f" />
 
+  ## c) Package
+
+  Jatkoin tohon samaan kun kohdassa b lisäsin vain uuden roolin pack.
+
+  Tässä minulla oli paljon ongelmia vaikka olin ylempänä valinnut esimerkiski useamman paketin asennuksen, jotenkin se syntaxi, mikä siellä oli esimerkkinä ei toiminut vaan sisennystä piti muuttaa. Olin kumminkin tehnyt vastaavaa tossa h1 vapaaehtoisessa tehtävässä niin kävin sieltä itseltäni lunttaamassa.
+
+  <img width="480" height="154" alt="Image" src="https://github.com/user-attachments/assets/8b446060-f97b-45ef-911c-38a4002643c4" />
+
+  <img width="1214" height="566" alt="Image" src="https://github.com/user-attachments/assets/7ec632f2-048b-4d3d-a5af-98abf6a40ef5" />
+
+  Mutta sain lopulta toimimaan (en poistanut tuota localhost:ia hosts.ini tiedostoa, joten se vielä herjaa).
+
+  ## d) File
+
+  Tein uuden tiedoston, missä oli monta riviä samalla tavalla kun tehtii hello-worldissä eli copy:a käyttämällä. Sen jälkeen tälle tiedostolle laitoin oikeudet 660 eli tiedoston omistajalla ja ryhmällä on oikeus lukea ja kirjoittaa eli rw-rw----.
+
+  <img width="1073" height="760" alt="Image" src="https://github.com/user-attachments/assets/c1c6e56b-a357-4f9b-a3c7-dce1b1e4a054" />
+
+  ## e) Jotain muuta
+  
+Tein käyttämällä ansible.builtin.stat moduulia käyttämällä sellaisen, joka tarkistaa onko tiedoston omistaja oikea. Käytin tiedostona d kohdassa tehtyä tiedostoa ja samaa kansiota, testasin ensin oikealla käyttäjän nimellä ja sitten väärällä.
+
+### Oikealla
+
+<img width="520" height="557" alt="Image" src="https://github.com/user-attachments/assets/e83b648d-2828-490b-8871-102f58134f9a" />
+
+<img width="1093" height="512" alt="kuva" src="https://github.com/user-attachments/assets/4d811d73-6c4e-47e4-9b7b-ed126c1d835d" />
+
+### Väärällä
+
+Vaihdoin statin mainissa niin, että se odottaa omistajan olevan root
+
+<img width="502" height="168" alt="Image" src="https://github.com/user-attachments/assets/edaf76b4-c9df-4409-82c1-7ce61739ac43" />
+
+Ja ajoin playbookin
+
+<img width="1207" height="593" alt="Image" src="https://github.com/user-attachments/assets/836e6f50-f1dd-47c2-a4cc-03d49813d2d0" />
+
+Ja toimi odotusten mukaisesti. Tää on ihan kätevä voi keskeyttää ansible komennon jos jokin ei ookkaan odotusten mukaisesti.
+
+## Lähteet
+
+https://terokarvinen.com/passwordless-sudo/
+https://terokarvinen.com/passwordless-sudo-with-ansible/
+https://docs.ansible.com/projects/ansible/latest/collections/ansible/builtin/stat_module.html#ansible-collections-ansible-builtin-stat-module
+
   

@@ -59,3 +59,37 @@ Miksi tätä ei voisi tehdä suoraan root shellissä jos siellä pystyisi sen my
   Esimerkki miten annetaan käyttäjälle avain käyttämällä linkkiä github reposta.
 
   ## a) Sudoless
+  
+  Koska tarkoituksena on tehdä sudoton käyttäjä ansiblea varten otin ensin SSH:n localhostiin ja sitten tein käyttäjän viimah2 ja ryhmän sudoton, johon lisäsin käyttäjän viimah2.
+
+  <img width="473" height="292" alt="Image" src="https://github.com/user-attachments/assets/3ef76f93-27a9-4b4a-a3f1-8079c1b91768" />
+
+  Avasin uuden terminaalin ja menin root shelliin, jonka jälkeen palasin toiseen terminaaliin ja tein /etc/sudoers.d kansioon uuden tiedoston sudoton, jossa annoin ryhmälle sudoton oikeudet käyttää sudoa ilman salasanaa.
+
+  Sen jälkeen poistuin SSH:sta ja tein ssh-copy-id viimah2@localhost
+
+  <img width="397" height="87" alt="Image" src="https://github.com/user-attachments/assets/52329cf9-7105-483d-a2bd-ca78b240b2e0" />
+
+  Testasin ottamalla manuaalisesti ssh yhteyden ja ajamalla sudo komennon ja toimi ilman sudoa!
+
+  <img width="425" height="257" alt="Image" src="https://github.com/user-attachments/assets/bf9873fc-5c43-4711-bc0d-ffbca52e827c" />
+
+  Jonka jälkeen testasin saman vielä ansiblella, lisäämällä become: true site.yml tiedostoon, mikä myöskin toimi!
+
+  <img width="1125" height="644" alt="Image" src="https://github.com/user-attachments/assets/34ba59c2-189a-4854-8868-ad4b5651f885" />
+
+  ## b) Antero
+
+  Nyt sama kun aikaisemmin mutta kokonaan ansiblella.
+
+  <img width="239" height="202" alt="Image" src="https://github.com/user-attachments/assets/970caade-7ade-4fd8-bfdb-7877eba92caa" />
+
+  ansible.cfg on samanlainen kun aikaisemminkin, mutta muut ovat vastaavasti.
+
+  <img width="949" height="616" alt="Image" src="https://github.com/user-attachments/assets/f32fa8c8-a7a3-476b-b951-2b2d8e5357c1" />
+
+  Olin vähän epävarma, että kun tuo käyttäjä luodaan ja sillä käyttäjällä halutaan ajaa tuo toinen rooli, joka ei sitten enää vaadi salasanaa, niin lisäsin hostiin tuon localhost käyttäjän, jolla tehtiin ensin toi       harkka2b käyttäjä jolta sitten oikeudet löytyy. Mutta tähän olisi varmaan ollut jokin parempi tapa koska nyt se herjaa jatkuvasti sitä localhostia siellä, kai sen vois jälkeenpäin poistaa mutta en keksinyt parempaa tapaa?
+
+  <img width="1165" height="525" alt="Image" src="https://github.com/user-attachments/assets/6503995d-dc7c-43ca-bad6-8103d154556f" />
+
+  

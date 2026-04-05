@@ -12,7 +12,7 @@ Viikko 14 kotitehtävät
 
 ### Karvinen 2026: Passwordless Sudo with Ansible
   - Tehdään ansiblella automatisoiden mitä opittiin aikaisemmassa artikkelissa.
-  - On hyvä ymmärtää ja osata tehdä manuaalisesti ennen kun alkaa automatisoimaan.
+  - On hyvä ymmärtää ja osata tehdä manuaalisesti ennen kuin alkaa automatisoimaan.
 
 ### ansible-doc
 
@@ -73,29 +73,29 @@ Viikko 14 kotitehtävät
 
   <img width="425" height="257" alt="Image" src="https://github.com/user-attachments/assets/bf9873fc-5c43-4711-bc0d-ffbca52e827c" />
 
-  Jonka jälkeen testasin saman vielä ansiblella, lisäämällä become: true site.yml tiedostoon, mikä myöskin toimi!
+  Jonka jälkeen testasin saman vielä ansiblella, lisäämällä become: true site.yml tiedostoon, mikä myös toimi!
 
   <img width="1125" height="644" alt="Image" src="https://github.com/user-attachments/assets/34ba59c2-189a-4854-8868-ad4b5651f885" />
 
   ## b) Antero
 
-  Nyt sama kun aikaisemmin mutta kokonaan ansiblella.
+  Nyt sama kuin aikaisemmin kohdassa a mutta kokonaan ansiblella.
 
   <img width="239" height="202" alt="Image" src="https://github.com/user-attachments/assets/970caade-7ade-4fd8-bfdb-7877eba92caa" />
 
-  ansible.cfg on samanlainen kun aikaisemminkin, mutta muut ovat vastaavasti.
+  ansible.cfg on samanlainen kuin aikaisemminkin, mutta muut ovat kuten kuva näyttää.
 
   <img width="949" height="616" alt="Image" src="https://github.com/user-attachments/assets/f32fa8c8-a7a3-476b-b951-2b2d8e5357c1" />
 
-  Olin vähän epävarma, että kun tuo käyttäjä luodaan ja sillä käyttäjällä halutaan ajaa tuo toinen rooli, joka ei sitten enää vaadi salasanaa, niin lisäsin hostiin tuon localhost käyttäjän, jolla tehtiin ensin toi       harkka2b käyttäjä jolta sitten oikeudet löytyy. Mutta tähän olisi varmaan ollut jokin parempi tapa koska nyt se herjaa jatkuvasti sitä localhostia siellä, kai sen vois jälkeenpäin poistaa mutta en keksinyt parempaa tapaa?
+  Olin vähän epävarma, että kun tuo käyttäjä luodaan ja sillä käyttäjällä halutaan ajaa tuo toinen rooli, joka ei sitten enää vaadi salasanaa, niin lisäsin hostiin tuon localhost käyttäjän, jolla tehtiin ensin toi       harkka2b käyttäjä, jolta sitten oikeudet löytyy. Mutta tähän olisi varmaan ollut jokin parempi tapa koska nyt se herjaa jatkuvasti sitä localhostia siellä, kai sen vois jälkeenpäin poistaa mutta en keksinyt parempaa tapaa?
 
   <img width="1165" height="525" alt="Image" src="https://github.com/user-attachments/assets/6503995d-dc7c-43ca-bad6-8103d154556f" />
 
   ## c) Package
 
-  Jatkoin tohon samaan kun kohdassa b lisäsin vain uuden roolin pack.
+  Jatkoin tohon samaan kuin kohdassa b lisäsin vain uuden roolin pack.
 
-  Tässä minulla oli paljon ongelmia vaikka olin ylempänä valinnut esimerkiski useamman paketin asennuksen, jotenkin se syntaxi, mikä siellä oli esimerkkinä ei toiminut vaan sisennystä piti muuttaa. Olin kumminkin tehnyt vastaavaa tossa h1 vapaaehtoisessa tehtävässä niin kävin sieltä itseltäni lunttaamassa.
+  Tässä minulla oli paljon ongelmia, vaikka olin ylempänä valinnut esimerkiksi useamman paketin asennuksen, jotenkin se syntaxi, mikä siellä oli esimerkkinä ei toiminut vaan sisennystä piti muuttaa. Olin kumminkin tehnyt vastaavaa tossa h1 vapaaehtoisessa tehtävässä niin kävin sieltä itseltäni lunttaamassa.
 
   <img width="480" height="154" alt="Image" src="https://github.com/user-attachments/assets/8b446060-f97b-45ef-911c-38a4002643c4" />
 
@@ -105,7 +105,7 @@ Viikko 14 kotitehtävät
 
   ## d) File
 
-  Tein uuden tiedoston, missä oli monta riviä samalla tavalla kun tehtii hello-worldissä eli copy:a käyttämällä. Sen jälkeen tälle tiedostolle laitoin oikeudet 660 eli tiedoston omistajalla ja ryhmällä on oikeus lukea ja kirjoittaa eli rw-rw----.
+  Tein uuden tiedoston, missä oli monta riviä samalla tavalla kuin tehtiin hello-worldissä eli copy:a käyttämällä. Sen jälkeen tälle tiedostolle laitoin oikeudet 660 eli tiedoston omistajalla ja ryhmällä on oikeus lukea ja kirjoittaa eli rw-rw----.
 
   <img width="1073" height="760" alt="Image" src="https://github.com/user-attachments/assets/c1c6e56b-a357-4f9b-a3c7-dce1b1e4a054" />
 

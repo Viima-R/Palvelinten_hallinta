@@ -80,7 +80,7 @@ siellä oli kohta, mikä sanoi "default_server" joten poistin sen ja lisäsin vi
 
 # c) Automoottorix
 
-**Anteeksi tämän c kohdan sekavuus minulla kaatui selain kesken tämän osion, joten kuvitus on tehty jälkeenpäin ja selostus on muistista mitä tein.**
+**Anteeksi tämän c kohdan sekavuus kirjoitin raporttia selaimessa, joka kaatui kesken tämän osion, joten kuvitus on tehty jälkeenpäin ja selostus on muistista mitä tein.**
 
 Lähdin toteuttamaan, mitä olin tehnyt kohdassa b ansiblea käyttäen. Tein tiedostos hosts.ini, ansible.cfg ja site.yml tiedostot sekä roles kansion.
 

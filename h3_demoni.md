@@ -80,7 +80,7 @@ siellä oli kohta, mikä sanoi "default_server" joten poistin sen ja lisäsin vi
 
 # c) Automoottorix
 
-**Minulla kaatui selain kesken tämän osion, joten kuvitus on tehty jälkeenpäin ja selostus on muistista, mitä tein.**
+**Anteeksi tämän c kohdan sekavuus minulla kaatui selain kesken tämän osion, joten kuvitus on tehty jälkeenpäin ja selostus on muistista mitä tein.**
 
 Lähdin toteuttamaan, mitä olin tehnyt kohdassa b ansiblea käyttäen. Tein tiedostos hosts.ini, ansible.cfg ja site.yml tiedostot sekä roles kansion.
 
@@ -90,14 +90,38 @@ Sen jälkeen tein handlers kansion ja tiedoston, joka käynnistää nginx:n uude
 
 <img width="549" height="189" alt="Image" src="https://github.com/user-attachments/assets/b1269d6a-a55f-457f-a23a-8fe05db6b063" />
 
-Seuraavaksi tein "files" kansion jonka sisään kopioin tiedostot /etc/nginx/sites-available/koti, /etc/nginx/sites-available/default ja /home/viima/harkka3sivu/index.html kopioin nämä tiedostot, koti määrittelee kotihakemistossa olevan hakemiston kotisivun sijainniksi, defaultia muutin kohdassa b joten muutan sitä tässä ansiblella tehdessäkin ja index.html on sivu, jonka orja kone saa kotisivukseen. Muokkasin index.html kopioimisen jälkeen, jotta se erottuu b osan sivusta.
+Seuraavaksi tein "files" kansion jonka sisään kopioin tiedostot /etc/nginx/sites-available/koti (jonka muokkasin uudella rootilla), /etc/nginx/sites-available/default ja /home/viima/harkka3sivu/index.html kopioin nämä tiedostot, koti määrittelee kotihakemistossa olevan hakemiston kotisivun sijainniksi, defaultia muutin kohdassa b joten muutan sitä tässä ansiblella tehdessäkin ja index.html on sivu, jonka orja kone saa kotisivukseen. Muokkasin index.html kopioimisen jälkeen, jotta se erottuu b osan sivusta.
 
 <img width="348" height="305" alt="Image" src="https://github.com/user-attachments/assets/0f216f16-e57a-443f-8260-552a8497f0ef" />
 
 Tein taskin main.yml tiedostoon seuraavakasi tehtävät: nginx asennus viimeisimpään versioon, koti ja default tiedoston vieminen /etc/nginx/sites-available kansioon, symlinkin luominen tiedostoista sites-enabled kansioon, hakemiston "pubsite" luominen orja koneen käyttäjän "viimaans" kotihakemistoon, oikeiuksien muuttaminen "viimaans" kotihakemistoon, sekä html tiedoston vieminen "pubsite" hakemistoon. Testasin playbookin ja tässä pääsenkin kohtaan, jossa olin kun selaimeni kaatui.
 
+<img width="865" height="288" alt="Image" src="https://github.com/user-attachments/assets/cfa21270-af1c-4071-8abf-7e3b62ddc7b9" />
+
+Kuten kuvasta näkyy kotihakemiston oikeuksien vaihtaminen ei onnistunut koska käyttäjän nimi on kirjoitettu väärin. Korjasin nimen ja ajo onnistui.
+
+<img width="712" height="799" alt="Image" src="https://github.com/user-attachments/assets/80302512-e72e-4c53-bac1-66adb1449f49" />
+
+<img width="878" height="667" alt="Image" src="https://github.com/user-attachments/assets/e64b9815-b6f8-4f37-8597-21643cad6eff" />
+
+Ajo onnistui mutta localhost etusivu ei muuttunut etusivuksi vaikka koti tiedosto, jonka olin kopioinut files kansioon oli muokattu uudella rootilla vaan se näytti vanhaa etusivua. Tarkistin, että onko nginx käynnistynyt uudestaan ja jostain syystä se ei sitä ollut tehnyt. Jostain syystä handleri ei enää toiminut vaikka se toimi hello world testausta ajettaessa. Lisäsin notifyn myös html tiedoston vientiä tekevään tehtävään, sekä laitoin notifyt hipsukoiden sisään, muokkasin html tiedostoa ja ajoin uudeestaan.
+
+Ja nyt toimi!
+
+<img width="1316" height="805" alt="Image" src="https://github.com/user-attachments/assets/a126df52-f25c-4f0a-9684-0f1dce33cc11" />
+
+Lopputilanne:
+
+<img width="317" height="334" alt="kuva" src="https://github.com/user-attachments/assets/08c6405e-0b7d-4b51-9fd3-25137192fde5" />
+
+<img width="475" height="775" alt="kuva" src="https://github.com/user-attachments/assets/26db1c4f-6ed5-4a75-9c73-7b516d4d7225" />
+
+
+
 # Lähteet:
 
+- https://terokarvinen.com/apache-ansible/
+- https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_handlers.html
 - https://serverfault.com/questions/249401/how-to-configure-apache-server-with-localhost-virtual-host
 
 

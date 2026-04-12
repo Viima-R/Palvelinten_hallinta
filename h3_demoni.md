@@ -11,7 +11,7 @@
 - Hallinnoi palveluita orja koneilla, voit esim. sammuttaa, käynnistää ja uudelleenkäynnistää demoneita.
  - Enabled komennolla voi määritellä jonkin palvelun käynnistymään bootin yhteydessä.
  - Name määrittelee palvelun, mitä hallinoidaan.
- - Statella voidaan määritellä haluttu palvelun tila, jos halutaan että demoni on käynnissä voidaan käyttää "started" ja se käynnistää demonin jos se ei ole käynnissä ja jos on se ei tee mitään.
+ - Statella voidaan määritellä haluttu palvelun tila, jos halutaan että demoni on käynnissä, voidaan käyttää "started" ja se käynnistää demonin jos se ei ole käynnissä ja jos on se ei tee mitään.
  - Esimerkissä pystäytetään palvelu httpd, jos se on käynnissä.
 
 <img width="370" height="84" alt="Image" src="https://github.com/user-attachments/assets/b22e70e3-81d5-4d54-b202-ab6fbc8c3cb6" />
@@ -49,8 +49,8 @@ Jälleen kerran käynnistin demonin uudestaan. Tällä kertaa sain ilmoituksen, 
 
 <img width="481" height="274" alt="Image" src="https://github.com/user-attachments/assets/a2005636-4081-48cd-893f-f344086625d0" />
 
-Kävin kuitenkin oikeudet läpi ja niiden pitäisi olla oikein: hakemistoille o+x ja tiedostolle olin jopa antanu liikaa oikeuksia joten poistin kirjoitus oikeudet joten sille jäi vain muille käyttäjille luku oikeudet.
-En keksinyt itse joten hain netistä ja löysin lisäyksen (serverfault, 2011) conf tiedostoon \<directory\> rakenteen joten kokeilin tätä myös itse.
+Kävin kuitenkin oikeudet läpi ja niiden pitäisi olla oikein: hakemistoille o+x ja tiedostolle olin jopa antanu liikaa oikeuksia, joten poistin kirjoitus oikeudet, joten sille jäi vain muille käyttäjille luku oikeudet.
+En keksinyt itse joten hain netistä ja löysin lisäyksen (serverfault, 2011) conf tiedostoon \<directory\> rakenteen, joten kokeilin tätä myös itse.
 
 <img width="615" height="359" alt="Image" src="https://github.com/user-attachments/assets/1f27839e-c9d5-4ca0-8ac9-f07fd95bf802" />
 

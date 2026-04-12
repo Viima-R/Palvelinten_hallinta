@@ -80,7 +80,21 @@ siellä oli kohta, mikä sanoi "default_server" joten poistin sen ja lisäsin vi
 
 # c) Automoottorix
 
+**Minulla kaatui selain kesken tämän osion, joten kuvitus on tehty jälkeenpäin ja selostus on muistista, mitä tein.**
 
+Lähdin toteuttamaan, mitä olin tehnyt kohdassa b ansiblea käyttäen. Tein tiedostos hosts.ini, ansible.cfg ja site.yml tiedostot sekä roles kansion.
+
+<img width="442" height="292" alt="Image" src="https://github.com/user-attachments/assets/687003a2-080b-4c39-806a-931e3f025938" />
+
+Sen jälkeen tein handlers kansion ja tiedoston, joka käynnistää nginx:n uudestaan kun handleria huomautetaan. Testasin tätä tekemällä hello world taskin ja huomauttamalla handleria siellä, handleri toimi ja teki, mitä pyydettiin tarkistin tämän vielä kattomalla nginx:n statusken ja se oli käynnistynyt uudelleen. (Kuvan hello world on kommentoitu pois koska olen jo siirtynyt työssä eteenpäin ja menetin kuvat tästä työvaiheesta, minulla oli myös kuva playbookin ajosta, joka näytti toimivuuden)
+
+<img width="549" height="189" alt="Image" src="https://github.com/user-attachments/assets/b1269d6a-a55f-457f-a23a-8fe05db6b063" />
+
+Seuraavaksi tein "files" kansion jonka sisään kopioin tiedostot /etc/nginx/sites-available/koti, /etc/nginx/sites-available/default ja /home/viima/harkka3sivu/index.html kopioin nämä tiedostot, koti määrittelee kotihakemistossa olevan hakemiston kotisivun sijainniksi, defaultia muutin kohdassa b joten muutan sitä tässä ansiblella tehdessäkin ja index.html on sivu, jonka orja kone saa kotisivukseen. Muokkasin index.html kopioimisen jälkeen, jotta se erottuu b osan sivusta.
+
+<img width="348" height="305" alt="Image" src="https://github.com/user-attachments/assets/0f216f16-e57a-443f-8260-552a8497f0ef" />
+
+Tein taskin main.yml tiedostoon seuraavakasi tehtävät: nginx asennus viimeisimpään versioon, koti ja default tiedoston vieminen /etc/nginx/sites-available kansioon, symlinkin luominen tiedostoista sites-enabled kansioon, hakemiston "pubsite" luominen orja koneen käyttäjän "viimaans" kotihakemistoon, oikeiuksien muuttaminen "viimaans" kotihakemistoon, sekä html tiedoston vieminen "pubsite" hakemistoon. Testasin playbookin ja tässä pääsenkin kohtaan, jossa olin kun selaimeni kaatui.
 
 # Lähteet:
 

@@ -80,7 +80,7 @@ Ja ajoin playbookin.
 
 <img width="625" height="244" alt="kuva" src="https://github.com/user-attachments/assets/01bf0dde-f063-4099-9612-aa992e534ddc" />
 
-e) Idempotentti
+# e) Idempotentti
 
 Todistaakseen, että tilamme on idempotentti ajoin playbookin vielä pari kertaa uudestaan ja sain, joka kerta seuraavan.
 

@@ -32,7 +32,7 @@ Jonka jälkeen tein tasks kansioon main.yml tiedoston, jossa postgresql:n uusimm
 
 <img width="418" height="94" alt="kuva" src="https://github.com/user-attachments/assets/7bf7b92e-7c1d-4995-9f93-bb8e2a5f7a81" />
 
-Sitten testaamaan, mutta ensin poistin postgressin.
+Sitten testaamaan, mutta ensin poistin postgressin ja siihen liittyvät paketit.
 
 ```
 sudo systemctl stop postgresql
@@ -67,7 +67,7 @@ Toimii!
 
 # d) Paikka remonttiin
 
-Poistin postgressin käyttämällä samoja komentoja kuin käytin kohdassa b.
+Poistin postgressin ja siihen liittyvät paketit käyttämällä samoja komentoja kuin käytin kohdassa b.
 
 ```
 sudo systemctl stop postgresql

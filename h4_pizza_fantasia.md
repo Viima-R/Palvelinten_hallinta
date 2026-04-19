@@ -51,6 +51,25 @@ Ja varmistin asennuksen onnistuneen.
 
 # c) Asetus
 
+<img width="641" height="123" alt="kuva" src="https://github.com/user-attachments/assets/fddfe521-f496-4b88-8e3d-7a28cf170809" />
+
+Kuten kuvasta näkee postgres on oletuksean enabled tilassa, eli se käynnistyy automaattisesti kun palvelin käynnistyy, muutetaan asetusta siten, että se ei käynnisty.
+
+Lisäsin main.yml tiedostoon kohdan joka muutaa postgresql:n disablediksi.
+
+<img width="404" height="203" alt="kuva" src="https://github.com/user-attachments/assets/9b5b20e0-2d93-4096-8b1d-50551e982d5f" />
+
+Ja testasin ajaa playbookin.
+
+<img width="658" height="326" alt="kuva" src="https://github.com/user-attachments/assets/dac3681c-309d-47c2-a752-8e23d81a9893" />
+
+Toimii!
+
+# d) Paikka remonttiin
+
+
+
+
 
 
 

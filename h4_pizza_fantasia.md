@@ -12,11 +12,31 @@
 
 Valitsin asennettavaksi demoniksi postgresql.
 
-````
+```
 sudo apt update
 sudo apt upgrade -y
 sudo apt install postgresql
-````
+```
 
 <img width="639" height="60" alt="Image" src="https://github.com/user-attachments/assets/08c3c151-31b7-431f-9cd7-891c19930598" />
   
+# b) Automaatti
+
+Seuraavaksi automatisointi ansiblella.
+
+Tein uuden hakemiston "Harkka4", johon lisäsin ansible.cfg, hosts.ini ja site.yaml tiedostot, sekä roles kansion ja sen alle postgres ja tasks kansiot.
+
+<img width="315" height="361" alt="Image" src="https://github.com/user-attachments/assets/09e19c0c-d70a-4b60-adc0-8f7662bedaa9" />
+
+Jonka jälkeen tein tasks kansioon main.yml tiedoston, jossa postgresql:n uusimman version asennus tapahtuu.
+
+<img width="412" height="86" alt="kuva" src="https://github.com/user-attachments/assets/67cc8c9e-802a-4714-969b-bb7262f1b82b" />
+
+Sitten testaamaan, mutta ensin poistin postgressin.
+
+```
+sudo systemctl stop postgresql
+sudo apt purge postgresql
+```
+
+

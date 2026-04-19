@@ -93,6 +93,11 @@ Todistaakseen, että tilamme on idempotentti ajoin playbookin vielä pari kertaa
 
 Mitään muutoksia ei siis tapahtunut, koska olimme jo toivotussa tilassa eli tilamme on idempotentti.
 
+# Lähteet
+- https://westminsterresearch.westminster.ac.uk/download/4cc417566aa9af60fe3826d690719e390abdb7a3c8672f3d51b1eb4ca75e7624/1427236/karvinen-2023-configuration-management-of-distributed-systems.pdf
+- https://docs.ansible.com/projects/ansible/latest/collections/ansible/builtin/systemd_service_module.html
+- https://askubuntu.com/questions/32730/how-to-remove-postgres-from-my-installation
+
 
 
 

@@ -30,7 +30,7 @@ Tein uuden hakemiston "Harkka4", johon lisäsin ansible.cfg, hosts.ini ja site.y
 
 Jonka jälkeen tein tasks kansioon main.yml tiedoston, jossa postgresql:n uusimman version asennus tapahtuu.
 
-<img width="412" height="86" alt="kuva" src="https://github.com/user-attachments/assets/67cc8c9e-802a-4714-969b-bb7262f1b82b" />
+<img width="418" height="94" alt="kuva" src="https://github.com/user-attachments/assets/7bf7b92e-7c1d-4995-9f93-bb8e2a5f7a81" />
 
 Sitten testaamaan, mutta ensin poistin postgressin.
 

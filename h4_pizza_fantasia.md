@@ -36,7 +36,24 @@ Sitten testaamaan, mutta ensin poistin postgressin.
 
 ```
 sudo systemctl stop postgresql
-sudo apt purge postgresql
+sudo apt purge postgresql postgresql-* -y
 ```
+
+<img width="333" height="33" alt="kuva" src="https://github.com/user-attachments/assets/fbe13cdd-0744-4702-951d-8c9d0bbc8a96" />
+
+Jonka jälkeen ajoin playbookin.
+
+<img width="533" height="229" alt="kuva" src="https://github.com/user-attachments/assets/0512fc3e-eacd-4cdc-871a-9b968ce5cf06" />
+
+Ja varmistin asennuksen onnistuneen.
+
+<img width="335" height="42" alt="kuva" src="https://github.com/user-attachments/assets/bca55fca-2fdf-4382-8b01-46898dfed44f" />
+
+# c) Asetus
+
+
+
+
+
 
 

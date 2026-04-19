@@ -67,6 +67,27 @@ Toimii!
 
 # d) Paikka remonttiin
 
+Poistin postgressin käyttämällä samoja komentoja kuin käytin kohdassa b.
+
+```
+sudo systemctl stop postgresql
+sudo apt purge postgresql postgresql-* -y
+```
+
+<img width="397" height="83" alt="kuva" src="https://github.com/user-attachments/assets/32b665bc-b577-47e1-8cef-bcbe27b0f7da" />
+
+Ja ajoin playbookin.
+
+<img width="625" height="244" alt="kuva" src="https://github.com/user-attachments/assets/01bf0dde-f063-4099-9612-aa992e534ddc" />
+
+e) Idempotentti
+
+Todistaakseen, että tilamme on idempotentti ajoin playbookin vielä pari kertaa uudestaan ja sain, joka kerta seuraavan.
+
+<img width="684" height="241" alt="kuva" src="https://github.com/user-attachments/assets/d5fbadd7-d2e7-4b9b-8361-a7c9e61fc6ff" />
+
+Mitään muutoksia ei siis tapahtunut, koska olimme jo toivotussa tilassa eli tilamme on idempotentti.
+
 
 
 

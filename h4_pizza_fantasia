@@ -1,0 +1,22 @@
+# x) Lue ja tiivistä
+
+### Karvinen 2023: Configuration Management of Distributed Systems over Unreliable and Hostile Networks 4.12.1, 4.12.2 ja 4.12.3.1
+
+- Infran hallinta ohjelmien täsmäkielet(eli DSL) ovat usein suuria ja saattavat sisältävää satoja funktioita.
+- Funktioita ohjataan taustalla eri tavoin eri ohjelmissa.
+- Vain osa funktioista näkee raskasta käyttöä, eli vaikka ohjelmat ovat suuria, säännölistä käyttöä näkee vain pieni osa.
+- Idempotenssia voidaan toteutaan vertaamalla jo olemassa olevaa ja haluttua tulosta IF lausekkeessa jos ne ovat samat muutosta ei tarvitse tehdä.
+- Useimmat konfiguroinnit toteutetaan perus fasiliteeteillä
+
+# a) Räpylä
+
+Valitsin asennettavaksi demoniksi postgresql.
+
+```
+  sudo apt update
+  sudo apt upgrade -y
+  sudo apt install postgresql
+```
+
+<img width="639" height="60" alt="Image" src="https://github.com/user-attachments/assets/08c3c151-31b7-431f-9cd7-891c19930598" />
+  

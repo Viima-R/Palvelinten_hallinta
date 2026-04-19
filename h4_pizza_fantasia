@@ -12,11 +12,11 @@
 
 Valitsin asennettavaksi demoniksi postgresql.
 
-```
-  sudo apt update
-  sudo apt upgrade -y
-  sudo apt install postgresql
-```
+````
+sudo apt update
+sudo apt upgrade -y
+sudo apt install postgresql
+````
 
 <img width="639" height="60" alt="Image" src="https://github.com/user-attachments/assets/08c3c151-31b7-431f-9cd7-891c19930598" />
   

@@ -8,25 +8,25 @@
   ```
   git add .
   ```
-  Tämä komento valitsee kaikki muokatut tiedostot commitoitaviksi (pisteen sijasta voi käyttää "--all" tai kirjoitta tiedostojen nimet/polut).
+  Tämä komento valitsee kaikki muokatut tiedostot commitoitaviksi (pisteen sijasta voi käyttää "--all" tai kirjoitta tiedostojen nimet/polut). (docs/git-add)
 
   ```
   git commit
   ```
 
-  Tallentaa muutokset git-historiaan, yhteydessä annetaan kommentti kuvaamaan muutoksia.
+  Tallentaa muutokset git-historiaan, yhteydessä annetaan kommentti kuvaamaan muutoksia. (docs/git-commit)
 
   ```
   git pull
   ```
 
-  Hakee muutokset etä-varastosta (remote repository) ja päivittää paikalliset tiedostot haetuilla muutoksilla.
+  Hakee muutokset etä-varastosta (remote repository) ja päivittää paikalliset tiedostot haetuilla muutoksilla. (docs/git-pull)
 
   ```
   git push
   ```
 
-  Vie tekemäsi muutokset etä-varastoon ja päivittää tiedostot siellä muutoksillasi.
+  Vie tekemäsi muutokset etä-varastoon ja päivittää tiedostot siellä muutoksillasi. (docs/git-push)
 
   # a) Online
 
@@ -140,7 +140,10 @@
   Tää tässä tehdessä tulikin vähän tehtyä kun tein aluksi windowsilla ja sitten virtuaalikoneella debianilla toi e kohta. Käytin komentorivinä windowsissa "git bash" ohjelmaa, tällä tekeminen on aikalailla sama kuin     Linuxilla tekisi (komennot on kutakuinkin samata).
 
 
+# Lähteet
 
+- https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F
+- https://git-scm.com/docs
 
 
 

@@ -47,7 +47,7 @@
   <img width="945" height="483" alt="kuva" src="https://github.com/user-attachments/assets/8d35fe13-4fc8-45ae-82f1-2df7c045e909" />
 
 
-  b) Dolly
+  # b) Dolly
 
   Kloonataan repo koneelleni, ensin otin linkin, jota käytän kloonaamiseen.
 
@@ -69,7 +69,7 @@
 
   <img width="918" height="562" alt="kuva" src="https://github.com/user-attachments/assets/648cfd09-f3b9-4688-8b18-f649a0046a2b" />
 
-  c) Doh!
+  # c) Doh!
 
   Tehdään tyhmä muutos README.md tiedostoon, kuten vaikka poistetaan kaikki teksti.
 
@@ -89,13 +89,63 @@
 
   Tyhmä muutos on kumoutunut!
 
-  d) Tukki
+  # d) Tukki
 
   Tarkastellaan lokia komennolla "git log"
 
   <img width="611" height="190" alt="kuva" src="https://github.com/user-attachments/assets/cea5a42e-04d5-43b7-a619-fa76bac01e4b" />
 
   Ensimmäinen tapahtuma on kun repo luotiin, kommenttina siinä on "Initial commit". Toisena tapahtumana on b kohdassa tehty muutokset README.md tiedostoon, jossa kommenttina "Modified README.md".
+
+  # e) Gitanbile
+
+  Avasin virtuaalikoneen ja kloonasin repon sinne.
+
+  <img width="719" height="132" alt="kuva" src="https://github.com/user-attachments/assets/a80bd761-bdba-4403-9e73-6e0424319d1a" />
+
+  Tein yksinkertaisen "hello_world" ansible kansion repon sisään.
+
+  <img width="737" height="707" alt="kuva" src="https://github.com/user-attachments/assets/0729529e-6d15-41ab-b934-04f81f494bde" />
+
+  Ajoin playbookin toimivuuden varmistamiseksi.
+
+  <img width="763" height="260" alt="kuva" src="https://github.com/user-attachments/assets/039334f2-2bc3-421b-8436-29b2bd13b7e1" />
+
+  Lisätään se versionhallintaan eli commitoidaan.
+
+  <img width="761" height="309" alt="kuva" src="https://github.com/user-attachments/assets/c6a7cf5e-2d2c-4270-945a-a998eafed2c1" />
+
+  Tehdään jokin muutos, muokataan tekstiä "main.yml" tiedostossa.
+
+  <img width="762" height="360" alt="kuva" src="https://github.com/user-attachments/assets/72243c69-0804-4b72-94c5-9e8b2e1dade0" />
+
+  Ja sitten "git add" ja "git commit"
+
+  <img width="762" height="310" alt="kuva" src="https://github.com/user-attachments/assets/1e2d3bee-e3b1-4b3c-9164-4289b7b3cd3b" />
+
+  Työnnetään nyt viellä Github repoon, eli "git pull" jotta ollaan ajantasalla jos joku muu olisi tehnyt muutoksia ja sitten "git push".
+
+  <img width="575" height="223" alt="kuva" src="https://github.com/user-attachments/assets/cf853800-79a8-49e0-9d84-38808ae1ff1b" />
+
+  Ja näkyy githubissa.
+
+  <img width="914" height="316" alt="kuva" src="https://github.com/user-attachments/assets/e40f71f5-7343-40a4-8c55-6e61e779b6ed" />
+
+  # f) Hae pari projektiin Moodlen keskustelusta
+
+  Tehty!
+
+  # g) Vapaaehtoinen
+
+  Tää tässä tehdessä tulikin vähän tehtyä kun tein aluksi windowsilla ja sitten virtuaalikoneella debianilla toi e kohta. Käytin komentorivinä windowsissa "git bash" ohjelmaa, tällä tekeminen on aikalailla sama kuin     Linuxilla tekisi (komennot on kutakuinkin samata).
+
+
+
+
+
+
+
+
   
 
 

@@ -99,6 +99,8 @@
 
   # e) Gitanbile
 
+  **EDIT tämä olisi vissiin pitänyt tehdä vain lokaalisti, samat vaiheet pätee mutta kloonaamisen sijaan "git init" kansiossa johon ansible luotu ja pilveen puskeminen ei onnistu jos ei yhteyttä ole luotu**
+
   Avasin virtuaalikoneen ja kloonasin repon sinne.
 
   <img width="719" height="132" alt="kuva" src="https://github.com/user-attachments/assets/a80bd761-bdba-4403-9e73-6e0424319d1a" />

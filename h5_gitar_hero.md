@@ -137,7 +137,7 @@
 
   # g) Vapaaehtoinen
 
-  Tää tässä tehdessä tulikin vähän tehtyä kun tein aluksi windowsilla ja sitten virtuaalikoneella debianilla toi e kohta. Käytin komentorivinä windowsissa "git bash" ohjelmaa, tällä tekeminen on aikalailla sama kuin     Linuxilla tekisi (komennot on kutakuinkin samata).
+  Tää tässä tehdessä tulikin vähän tehtyä kun tein aluksi windowsilla ja sitten virtuaalikoneen debianilla toi e kohta. Käytin komentorivinä windowsissa "git bash" ohjelmaa, tällä tekeminen on aikalailla sama kuin     Linuxilla tekisi (komennot on kutakuinkin samat).
 
 
 # Lähteet
